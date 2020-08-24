@@ -68,8 +68,14 @@ body {
 
 /* Navbar */
 
-.nav-small {
+.navbardiv,
+.myname,
+.ham,
+#b2 {
     visibility: hidden;
+    height: 0;
+    width: 0;
+    top: 0;
 }
 
 .nav-area {
@@ -112,8 +118,7 @@ body {
     font-size: 1.4vw;
 }
 
-#mode-button {
-    padding: 0;
+#b1 {
     margin: 0;
     padding: 0 25px;
     padding-bottom: -2px;
@@ -179,6 +184,8 @@ section {
 
 #work {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #work .content {
@@ -354,8 +361,8 @@ img {
 }
 
 #skills .container .skills svg {
-    height: 12vh;
-    width: 12vh;
+    height: 10vh;
+    width: 10vh;
 }
 
 #skills .container .skills .description {
@@ -366,6 +373,38 @@ img {
     text-align: center;
     color: #fff;
     background-color: transparent;
+}
+
+#skills .container .s1:hover {
+    background-image: linear-gradient( -45deg, rgba(0, 3, 184, 0.755), rgba(170, 162, 151, 0.962)), url("images/tools-background/altumcode-zE007SNgcdE-unsplash.jpg");
+}
+
+#skills .container .s2:hover {
+    background-image: linear-gradient( -45deg, rgba(255, 94, 0, 0.853), rgba(170, 162, 151, 0.962)), url("images/tools-background/markus-spiske-iHeX3jWkv9s-unsplash.jpg");
+}
+
+#skills .container .s3:hover {
+    background-image: linear-gradient( -45deg, rgba(53, 47, 47, 0.782), rgba(170, 162, 151, 0.962)), url("images/tools-background/altumcode-zE007SNgcdE-unsplash.jpg");
+}
+
+#skills .container .s4:hover {
+    background-image: linear-gradient( -45deg, rgba(255, 0, 76, 0.752), rgba(170, 162, 151, 0.962)), url("images/tools-background/markus-spiske-iHeX3jWkv9s-unsplash.jpg");
+}
+
+#skills .container .s5:hover {
+    background-image: linear-gradient( -45deg, rgba(251, 255, 0, 0.898), rgba(170, 162, 151, 0.962)), url("images/tools-background/markus-spiske-iHeX3jWkv9s-unsplash.jpg");
+}
+
+#skills .container .s6:hover {
+    background-image: linear-gradient( -45deg, rgba(153, 26, 192, 0.752), rgba(170, 162, 151, 0.962)), url("images/tools-background/altumcode-zE007SNgcdE-unsplash.jpg");
+}
+
+#skills .container .s7:hover {
+    background-image: linear-gradient( -45deg, rgba(21, 255, 0, 0.752), rgba(170, 162, 151, 0.962)), url("images/tools-background/markus-spiske-iHeX3jWkv9s-unsplash.jpg");
+}
+
+#skills .container .s8:hover {
+    background-image: linear-gradient( -45deg, rgba(0, 225, 255, 0.752), rgba(170, 162, 151, 0.962)), url("images/tools-background/altumcode-zE007SNgcdE-unsplash.jpg");
 }
 
 
@@ -379,12 +418,11 @@ img {
 #about .content {
     letter-spacing: 1px;
     padding-left: 10%;
-    margin-top: 2em;
     padding-left: 10%;
     margin-left: 25px;
 }
 
-#about h1 {
+#about h2 {
     margin: 30px 0;
     font-size: 4vw;
     font-weight: 500;
@@ -415,6 +453,7 @@ img {
 .socialContainer .social {
     padding: 12%;
     margin-left: 20px;
+    filter: drop-shadow(1px 2px 3px black);
 }
 
 
@@ -427,13 +466,34 @@ footer {
     z-index: 100;
     padding: 0px 10%;
     overflow: hidden;
-    box-shadow: 0px 0.5px 9px 0px rgb(214, 212, 214);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* box-shadow: 0px 0.5px 9px 0px rgb(214, 212, 214); */
 }
 
 footer .copyright p {
     font-size: 1em;
     padding: 10px;
     margin: 10px;
+}
+
+footer .copyright p a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+footer .copyright p a:hover,
+footer .copyright p a:focus {
+    text-decoration: underline;
+    color: black;
+}
+
+footer .copyright p a:active,
+footer .copyright p a:visited {
+    text-decoration: none;
+    color: black;
 }
 
 
@@ -525,7 +585,9 @@ footer .copyright p {
     section {
         padding-top: 14em;
     }
-    #work h2 {
+    #work h2,
+    #skills h2,
+    #about h2 {
         margin: 10% 0 4% 0;
         font-size: 4vw;
     }
@@ -550,10 +612,6 @@ footer .copyright p {
         height: 23vh;
     }
     /* Skills Section */
-    #skills h2 {
-        margin: 10% 0 4% 0;
-        font-size: 4vw;
-    }
     #skills h4 {
         font-size: 1.5vw;
     }
@@ -577,10 +635,6 @@ footer .copyright p {
         margin: 0.5vh;
     }
     /* About section */
-    #about h1 {
-        margin: 10% 0 4% 0;
-        font-size: 4vw;
-    }
     #about .description p {
         font-size: 2.5vh;
         line-height: 5rem;
@@ -590,25 +644,29 @@ footer .copyright p {
 
 @media (max-width:500px) {
     #home .content h1 {
-        font-size: 13.5vw;
+        font-size: 16rem;
+        padding: 0;
     }
     #home h4 {
-        font-size: 4vw;
+        font-size: 5rem;
     }
-    #work h4 {
-        font-size: 1.5vw;
+    #work h4,
+    #skills h4 {
+        font-size: 3.5rem;
+        line-height: 1.2em;
     }
-    #skills h2 {
-        font-size: 4vw;
+    #work .content,
+    #skills .content {
+        padding: 0 7%;
+        margin: 0;
+    }
+    #work h2,
+    #skills h2,
+    #about h2 {
+        font-size: 7rem;
     }
     #home h6 {
-        font-size: 1.5vw;
-    }
-    #skills h4 {
-        font-size: 1.5vw;
-    }
-    #about h1 {
-        font-size: 4vw;
+        font-size: 3rem;
     }
     #about .description p {
         line-height: 1.3em;
@@ -630,7 +688,10 @@ footer .copyright p {
     .nav-area {
         visibility: hidden;
     }
-    .nav-small {
+    .navbardiv,
+    .myname,
+    .ham,
+    #b2 {
         visibility: visible;
     }
     .myname {
@@ -639,6 +700,8 @@ footer .copyright p {
         top: 26px;
         left: 20px;
         font-size: 3rem;
+        height: auto;
+        width: auto;
     }
     .ham {
         position: fixed;
@@ -651,7 +714,7 @@ footer .copyright p {
         border: none;
         cursor: pointer;
         background-color: transparent;
-        background-image: url("https://ljc-dev.github.io/testing0/ham.svg");
+        background-image: url("ham.svg");
         background-repeat: no-repeat;
         background-size: 100%;
     }
@@ -671,10 +734,12 @@ footer .copyright p {
         background: black;
     }
     #b2 {
-        margin: -2px 0;
-        padding: 0 5px;
-        /* background-color: #000; */
+        margin: 0;
+        padding: 0;
+        height: auto;
+        width: auto;
     }
+    /* background-color: #000; */
     .showNav {
         transform: translateY(0);
     }
@@ -689,7 +754,7 @@ footer .copyright p {
     }
     .navbardiv ul li a {
         text-decoration: none;
-        font-size: 3.3rem;
+        font-size: 5.3rem;
         color: white;
         background: black;
         /* border-bottom: 2px solid black; */
@@ -697,11 +762,6 @@ footer .copyright p {
     .navbardiv ul li a:hover,
     .navbardiv ul li a:focus {
         border-bottom: 2px solid black;
-    }
-    #mode-button {
-        padding: 0 25px;
-        padding-bottom: -5px;
-        margin-bottom: 2px;
     }
     .socialContainer {
         top: 20vh;

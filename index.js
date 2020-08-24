@@ -123,8 +123,8 @@ $('#b1').click(
             $('.nav-a').removeClass('light');
             $('.description').addClass('dark');
             $('.description').removeClass('light');
-            $('#mode-button').addClass('dark');
-            $('#mode-button').removeClass('light');
+            $('#b1').addClass('dark');
+            $('#b1').removeClass('light');
             $('#work .content div').addClass('light');
             $('#work .content div').removeClass('dark');
         } else {
@@ -142,8 +142,8 @@ $('#b1').click(
             $('.nav-a').removeClass('dark');
             $('.description').removeClass('dark');
             $('.description').addClass('light');
-            $('#mode-button').removeClass('dark');
-            $('#mode-button').addClass('light');
+            $('#b1').removeClass('dark');
+            $('#b1').addClass('light');
             $('#work .content div').removeClass('light');
             $('#work .content div').addClass('dark');
         }
@@ -168,8 +168,8 @@ $('#b2').click(
             $('.nav-a').removeClass('light');
             $('.description').addClass('dark');
             $('.description').removeClass('light');
-            $('#mode-button').addClass('dark');
-            $('#mode-button').removeClass('light');
+            $('#b2').addClass('dark');
+            $('#b2').removeClass('light');
             $('#work .content div').addClass('light');
             $('#work .content div').removeClass('dark');
         } else {
@@ -187,8 +187,8 @@ $('#b2').click(
             $('.nav-a').removeClass('dark');
             $('.description').removeClass('dark');
             $('.description').addClass('light');
-            $('#mode-button').removeClass('dark');
-            $('#mode-button').addClass('light');
+            $('#b2').removeClass('dark');
+            $('#b2').addClass('light');
             $('#work .content div').removeClass('light');
             $('#work .content div').addClass('dark');
         }
