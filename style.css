@@ -813,6 +813,27 @@
                 height: 30px;
                 width: 30px;
             }
+            .swiper-slide {
+                width: 33vw;
+                height: 50.5vw;
+                margin: 2vw;
+                position: relative;
+                background: white;
+                display: flex;
+                flex-direction: column;
+                box-shadow: 5px 8px 5px rgba(0, 0, 0, 0.1);
+                transition: 0.3s ease-in-out;
+            }
+            .swiper-slide:hover {
+                height: 48vw;
+            }
+            .image-container {
+                position: relative;
+                width: 33vw;
+                height: 50.5vw;
+                z-index: 1;
+                border-radius: 5%;
+            }
         }
         
         @media (min-width:1280px) {
