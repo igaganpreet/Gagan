@@ -24,7 +24,7 @@ $(function() {
     )
 
     //add scroll on anchor tag of nav
-    $("nav").find("a").click(function(e) {
+    $(".navbardiv").find("a").click(function(e) {
         e.preventDefault();
         var section = $(this).attr("href");
         $("html, body").animate({
