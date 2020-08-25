@@ -487,14 +487,14 @@
         
         footer .copyright p a {
             text-decoration: none;
-            color: black;
+            background: transparent;
             font-weight: 700;
         }
         
         footer .copyright p a:hover,
         footer .copyright p a:focus {
             text-decoration: underline;
-            color: black;
+            background: transparent;
         }
         
         footer .copyright p a:active,
