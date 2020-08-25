@@ -714,12 +714,12 @@ footer .copyright p a:visited {
         border: none;
         cursor: pointer;
         background-color: transparent;
-        background-image: url("ham.svg");
+        background-image: url("hamlighttheme.svg");
         background-repeat: no-repeat;
         background-size: 100%;
     }
     .showClose {
-        background-image: url("https://ljc-dev.github.io/testing0/ham-close.svg");
+        background-image: url("hamclose.svg");
     }
     .navbardiv {
         position: fixed;

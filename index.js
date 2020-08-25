@@ -149,6 +149,7 @@ $('#b1').click(
         }
     }
 );
+
 $('#b2').click(
 
     function() {
@@ -168,8 +169,8 @@ $('#b2').click(
             $('.nav-a').removeClass('light');
             $('.description').addClass('dark');
             $('.description').removeClass('light');
-            $('#b2').addClass('dark');
-            $('#b2').removeClass('light');
+            // $('#b2').addClass('dark');
+            // $('#b2').removeClass('light');
             $('#work .content div').addClass('light');
             $('#work .content div').removeClass('dark');
         } else {
@@ -187,8 +188,8 @@ $('#b2').click(
             $('.nav-a').removeClass('dark');
             $('.description').removeClass('dark');
             $('.description').addClass('light');
-            $('#b2').removeClass('dark');
-            $('#b2').addClass('light');
+            // $('#b2').removeClass('dark');
+            // $('#b2').addClass('light');
             $('#work .content div').removeClass('light');
             $('#work .content div').addClass('dark');
         }
