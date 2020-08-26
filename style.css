@@ -64,6 +64,7 @@
         .navbardiv,
         .myname,
         .ham,
+        .navigation,
         #b2 {
             visibility: hidden;
             height: 0;
@@ -724,14 +725,30 @@
                 margin: 0.5vh;
                 padding: 10px;
             }
+            footer .copyright p {
+                font-size: 3em;
+                padding: 20px;
+                margin: 10px;
+            }
+            footer .copyright p a {
+                font-size: 1em;
+            }
             .nav-area {
                 visibility: hidden;
             }
             .navbardiv,
             .myname,
             .ham,
+            .navigation,
             #b2 {
                 visibility: visible;
+            }
+            .navigation {
+                height: 15vw;
+                position: fixed;
+                width: 100vw;
+                /* border: 2px solid purple; */
+                z-index: 100000;
             }
             .myname {
                 position: fixed;
